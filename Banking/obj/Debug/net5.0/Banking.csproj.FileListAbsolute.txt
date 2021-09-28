@@ -1,0 +1,16 @@
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.exe
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.deps.json
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.runtimeconfig.json
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.runtimeconfig.dev.json
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.dll
+C:\repos\Banking\Banking\bin\Debug\net5.0\ref\Banking.dll
+C:\repos\Banking\Banking\bin\Debug\net5.0\Banking.pdb
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.csproj.AssemblyReference.cache
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.AssemblyInfoInputs.cache
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.AssemblyInfo.cs
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.csproj.CoreCompileInputs.cache
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.dll
+C:\repos\Banking\Banking\obj\Debug\net5.0\ref\Banking.dll
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.pdb
+C:\repos\Banking\Banking\obj\Debug\net5.0\Banking.genruntimeconfig.cache
