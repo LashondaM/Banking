@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Banking
+{
+    class Savings : Account
+    {
+        public decimal InterestRate { get; set; } = 0.01m; // 
+
+        //decimal CalculateInterest(int months) => interest = Balance * (InterestRate / 12) * months;
+        public decimal CalculateAndPayInterest(int months)
+        {
+            var interest = Balance * (InterestRate / 12) * months;
+            Deposit(interest);
+            return interest;
+        }
+    }
+}

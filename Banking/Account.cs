@@ -14,15 +14,20 @@ namespace Banking
 
         public bool Deposit(decimal amount)
         {
+            if (amount <= 0)
+            {
+                Console.WriteLine("Insufficient funds!");
+                return false;
+            }
             this.Balance += amount; // this way is shorter
             return true;
             //this.Balance = this.Balance + amount;
         }
         public bool Withdraw(decimal amount)
         {
-            if (amount < 0)
+            if (amount <= 0)
             {
-                Console.WriteLine("Withdraw funds should be greater than zero!");
+                Console.WriteLine("Insufficient funds!");
                 return false;
             }
             if (amount > this.Balance)
