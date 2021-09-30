@@ -16,8 +16,10 @@ namespace Banking
         {
             if (amount <= 0)
             {
-                Console.WriteLine("Insufficient funds!");
-                return false;
+                throw new AmountGreaterThanZeroException();
+
+                //Console.WriteLine("Insufficient funds!");
+                //return false;
             }
             this.Balance += amount; // this way is shorter
             return true;
@@ -27,20 +29,25 @@ namespace Banking
         {
             if (amount <= 0)
             {
-                Console.WriteLine("Insufficient funds!");
-                return false;
+                throw new AmountGreaterThanZeroException();
             }
-            if (amount > this.Balance)
-            {
-                Console.WriteLine("Insufficient funds!");
-                return false;
-            }
-            this.Balance -= amount;
-            return true;
+                if (amount > this.Balance)
+                {
+                    throw new InsufficientFundsException(this.Balance, amount);
+                    //Console.WriteLine("Insufficient funds!");
+                    //return false;
+                }
+
+                this.Balance -= amount;
+                return true;
+
+            //else
+            //    throw new AmountGreaterThanZeroException();
         }
+
         public bool Transfer(decimal amount, Account ToAccount)
         {
-            var success = Withdraw(amount);
+            var success = this.Withdraw(amount);
             if (success)
             {
                 ToAccount.Deposit(amount);
